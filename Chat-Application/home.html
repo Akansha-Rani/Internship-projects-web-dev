@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>💬 Chats</h2>
+                <button class="new-chat-btn" id="newChatBtn">+</button>
+            </div>
+            
+            <div class="user-profile">
+                <div class="avatar">JD</div>
+                <div class="user-info">
+                    <h3>John Doe</h3>
+                    <span class="status online">Online</span>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search chats...">
+            </div>
+            
+            <div class="chat-list" id="chatList">
+                <!-- Chat items will be added here -->
+            </div>
+        </div>
+        
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="avatar">AI</div>
+                    <div>
+                        <h3 id="currentChatName">Select a chat</h3>
+                        <span class="typing-indicator" id="typingIndicator"></span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn">📞</button>
+                    <button class="action-btn">📹</button>
+                    <button class="action-btn">⚙️</button>
+                </div>
+            </div>
+            
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <h2>👋 Welcome to Chat App</h2>
+                    <p>Select a chat from the sidebar or start a new conversation</p>
+                </div>
+            </div>
+            
+            <div class="message-input-container">
+                <button class="attach-btn">📎</button>
+                <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off">
+                <button class="emoji-btn">😊</button>
+                <button class="send-btn" id="sendBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

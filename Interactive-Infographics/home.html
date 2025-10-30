@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Infographics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Tech Industry Statistics 2025</h1>
+            <p class="subtitle">Interactive data visualization dashboard</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card" data-stat="users">
+                <div class="stat-icon">👥</div>
+                <h2 class="stat-number" data-target="5400000000">0</h2>
+                <p class="stat-label">Internet Users</p>
+                <div class="stat-bar">
+                    <div class="stat-progress" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="stat-card" data-stat="mobile">
+                <div class="stat-icon">📱</div>
+                <h2 class="stat-number" data-target="6800000000">0</h2>
+                <p class="stat-label">Mobile Users</p>
+                <div class="stat-bar">
+                    <div class="stat-progress" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="stat-card" data-stat="social">
+                <div class="stat-icon">💬</div>
+                <h2 class="stat-number" data-target="4900000000">0</h2>
+                <p class="stat-label">Social Media Users</p>
+                <div class="stat-bar">
+                    <div class="stat-progress" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="stat-card" data-stat="ecommerce">
+                <div class="stat-icon">🛒</div>
+                <h2 class="stat-number" data-target="2640000000">0</h2>
+                <p class="stat-label">E-commerce Users</p>
+                <div class="stat-bar">
+                    <div class="stat-progress" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Programming Languages Popularity</h2>
+            <div class="chart-container">
+                <div class="bar-chart">
+                    <div class="bar-item" data-percent="29.8">
+                        <div class="bar-label">JavaScript</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 0%">
+                                <span class="bar-value">29.8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-item" data-percent="26.5">
+                        <div class="bar-label">Python</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 0%">
+                                <span class="bar-value">26.5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-item" data-percent="21.2">
+                        <div class="bar-label">Java</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 0%">
+                                <span class="bar-value">21.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-item" data-percent="18.7">
+                        <div class="bar-label">C++</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 0%">
+                                <span class="bar-value">18.7%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-item" data-percent="15.4">
+                        <div class="bar-label">TypeScript</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 0%">
+                                <span class="bar-value">15.4%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pie-section">
+            <h2>Device Market Share</h2>
+            <div class="pie-container">
+                <svg class="pie-chart" viewBox="0 0 200 200">
+                    <circle class="pie-segment" cx="100" cy="100" r="80" 
+                            stroke="#667eea" stroke-width="40" 
+                            fill="none" stroke-dasharray="0 502.4"
+                            data-value="58.7"></circle>
+                    <circle class="pie-segment" cx="100" cy="100" r="80" 
+                            stroke="#764ba2" stroke-width="40" 
+                            fill="none" stroke-dasharray="0 502.4"
+                            data-value="39.6"></circle>
+                    <circle class="pie-segment" cx="100" cy="100" r="80" 
+                            stroke="#f093fb" stroke-width="40" 
+                            fill="none" stroke-dasharray="0 502.4"
+                            data-value="1.7"></circle>
+                </svg>
+                <div class="pie-legend">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #667eea;"></span>
+                        <span>Mobile: 58.7%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #764ba2;"></span>
+                        <span>Desktop: 39.6%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #f093fb;"></span>
+                        <span>Tablet: 1.7%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <h2>Tech Milestones Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="1989">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>1989</h3>
+                        <p>World Wide Web invented</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2004">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2004</h3>
+                        <p>Facebook launched</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2007">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2007</h3>
+                        <p>iPhone released</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2016">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2016</h3>
+                        <p>AI beats human at Go</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2022">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2022</h3>
+                        <p>ChatGPT released</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
